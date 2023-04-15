@@ -1,0 +1,12 @@
+<main>
+    {{#each class}}
+    <form action="/book" method="POST">
+    <h1>Classes: </h1>
+    <p>From Fat to Fit!</p>
+    <h2>Class Name: {{this.classType}}</h2>
+    <img src={{this.imgName}}>
+    <p>Duration: {{this.length}} mins</p>
+    <button type="submit" name="bookAClass" value={{this.classType}}>Book</button>
+    </form>
+    {{/each}}
+</main>
